@@ -8,4 +8,4 @@ Click 🅰 to change font color;
 Click ✏️ to edit the text;
 Click ❌ to delete the post.
 
-Desenvolvido por [ CARLOS GARCIA ]
+Developed by [ CARLOS GARCIA ]
