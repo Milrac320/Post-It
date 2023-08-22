@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrastável Post-it com Opções de Edição</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="postItContainer" class="post-it-container">
+    <div class="post-it" id="postIt">
+      <div class="menu-bar">
+        <span class="menu-title" onclick="editTitle()">Título do Post-It</span>
+        <span class="edit-icon" onclick="toggleOptions()">✎</span>
+      </div>
+      <p class="text">Edite seu texto!</p>
+      <div class="options-container animate__animated" id="optionsContainer" style="display: none;">
+        <span class="options-icon" onclick="toggleColorPicker()">🎨</span>
+        <input type="color" id="colorPicker" style="display: none; margin-right: 15px;" onchange="changeColor(event)">
+        <span class="options-icon" onclick="toggleFontColorPicker()">🅰</span>
+        <input type="color" id="fontColorPicker" style="display: none; margin-right: 15px" onchange="changeFontColor(event)">
+        <span class="options-icon" onclick="editText()">✏️</span>
+        <span class="options-icon" onclick="deletePostIt()">❌</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
